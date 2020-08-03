@@ -1,0 +1,198 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    text-align: center;
+}
+input {
+    text-align: left;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* custom */
+a {
+    color: #409eff;
+    text-decoration: none;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+li {
+    list-style: none;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+    width: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    color: #9ca4ac;
+    font-weight: normal;
+}
+input::-moz-placeholder {
+    /* Firefox 19+ */
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    color: #9ca4ac;
+    font-weight: normal;
+}
+input:-ms-input-placeholder {
+    /* IE 10+ */
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    color: #9ca4ac;
+    font-weight: normal;
+}
+input:-moz-placeholder {
+    /* Firefox 18- */
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    color: #9ca4ac;
+    font-weight: normal;
+}
+html,
+body {
+    width: 100%;
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+    font-size: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Arial", "SimHei", "Microsoft YaHei" , "Hiragino Sans GB","Heiti SC", "STHeiti", "\9ED1\4F53", "\5b8b\4f53", "Open Sans", sans-serif; 
+    /* 处理mac和windows上字体显示问题，需要设置字体顺序以及font-smoothing，保证字体加粗后效果一致 */
+    position: relative;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

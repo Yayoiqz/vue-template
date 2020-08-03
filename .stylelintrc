@@ -1,0 +1,16 @@
+{
+    "extends":"stylelint-config-standard",
+    'defaultSeverity':'warning',
+    'ignoreFiles': ["**/*.js"],
+    'rules':{
+        'indentation':4,
+        'font-family-no-missing-generic-family-keyword':null,
+        'no-descending-specificity':null,
+        'color-no-invalid-hex':true,
+        'unit-no-unknown':true,
+        'function-calc-no-unspaced-operator':true,
+        'no-duplicate-selectors':true,
+        'rule-empty-line-before':'never',
+        'color-hex-case':'lower'
+    }
+}
