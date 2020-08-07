@@ -8,8 +8,8 @@ vscode
 
 ### 需要安装的 vscode 扩展:
 
-1. eslint (wiki:http://wiki.mintq.com/display/yanfabu/ESLint)
-2. stylelint (wiki:http://wiki.mintq.com/display/yanfabu/StyleLint)
+1. eslint
+2. stylelint
 3. Git History (https://github.com/DonJayamanne/gitHistoryVSCode)
 4. GitLens (https://github.com/eamodio/vscode-gitlens)
 5. Path Autocomplete
