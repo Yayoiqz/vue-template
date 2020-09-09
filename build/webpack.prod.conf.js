@@ -75,10 +75,12 @@ const webpackConfig = merge(baseWebpackConfig, {
         new webpack.HashedModuleIdsPlugin(),
         // enable scope hoisting
         new webpack.optimize.ModuleConcatenationPlugin(),
-        new CopyWebpackPlugin([{
-            from: path.resolve(__dirname, '../static'),
-            to: 'static'
-        }])
+        new CopyWebpackPlugin({
+            patterns: [{
+                from: path.resolve(__dirname, '../static'),
+                to: 'static'
+            }]
+        })
     ]
 })
 //生成分析图表
