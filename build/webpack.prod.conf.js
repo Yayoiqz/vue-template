@@ -8,7 +8,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin');
 const d = new Date();
 const time = `${d.getFullYear()}-${d.getMonth() + 1 < 10 ? '0' + (d.getMonth() + 1) : d.getMonth() + 1}-${d.getDate()}-${d.getHours()}-${d.getMinutes()}`
 const webpackConfig = merge(baseWebpackConfig, {
@@ -30,8 +30,8 @@ const webpackConfig = merge(baseWebpackConfig, {
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify('production')
         }),
-        new UglifyJsPlugin({
-            uglifyOptions: {
+        new TerserPlugin({
+            terserOptions: {
                 compress: {
                     warnings: false
                 }
@@ -69,8 +69,7 @@ const webpackConfig = merge(baseWebpackConfig, {
                 removeComments: true,
                 collapseWhitespace: true,
                 removeAttributeQuotes: true
-            },
-            chunksSortMode: 'dependency'
+            }
         }),
         // keep module.id stable when vender modules does not change
         new webpack.HashedModuleIdsPlugin(),
@@ -78,8 +77,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         new webpack.optimize.ModuleConcatenationPlugin(),
         new CopyWebpackPlugin([{
             from: path.resolve(__dirname, '../static'),
-            to: 'static',
-            ignore: ['.*']
+            to: 'static'
         }])
     ]
 })
