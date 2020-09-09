@@ -13,10 +13,6 @@
         "lint": "eslint src --ext .vue --cache --fix",
         "stylelint": "stylelint \"src/client/**/*.vue\" --fix"
     },
-    "pre-commit": [
-        "lint",
-        "stylelint"
-    ],
     "dependencies": {
         "axios": "^0.19.2",
         "koa": "^2.13.0",
