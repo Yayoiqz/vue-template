@@ -14,7 +14,7 @@
         "stylelint": "stylelint \"src/client/**/*.vue\" --fix"
     },
     "dependencies": {
-        "axios": "^0.19.2",
+        "axios": "^0.21.1",
         "koa": "^2.13.0",
         "koa-body": "^4.2.0",
         "koa-router": "^9.0.1",
